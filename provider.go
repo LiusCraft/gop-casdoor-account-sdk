@@ -10,8 +10,8 @@ const (
 
 // Provider binding status
 type ProviderBindsStatus struct {
-	Twitter  bool
-	Github   bool
-	Facebook bool
-	Wechat   bool
+	Twitter  bool `json:"Twitter"`
+	Github   bool `json:"Github"`
+	Facebook bool `json:"Facebook"`
+	Wechat   bool `json:"WeChat"`
 }
