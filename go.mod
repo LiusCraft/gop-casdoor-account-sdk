@@ -2,7 +2,10 @@ module github.com/liuscraft/gop-casdoor-account-sdk
 
 go 1.19
 
-require github.com/casdoor/casdoor-go-sdk v0.35.1
+require (
+	github.com/casdoor/casdoor-go-sdk v0.35.1
+	github.com/joho/godotenv v1.5.1
+)
 
 require (
 	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect

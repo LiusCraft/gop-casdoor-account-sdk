@@ -4,6 +4,7 @@ import (
 	"os"
 
 	"github.com/casdoor/casdoor-go-sdk/casdoorsdk"
+	_ "github.com/joho/godotenv/autoload"
 )
 
 type CasdoorConfig struct {
@@ -33,4 +34,7 @@ func CasdoorConfigInit() *CasdoorConfig {
 		organizationName: organizationName,
 		applicationName:  applicationName,
 	}
+}
+func GetCasdoorEndPoint() string {
+	return os.Getenv("GOP_CASDOOR_ENDPOINT")
 }
